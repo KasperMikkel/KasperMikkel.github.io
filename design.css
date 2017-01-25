@@ -35,3 +35,7 @@ html {
         height: 200%;
         width: 100%;
 }
+
+button {
+  align-self: center;
+}
