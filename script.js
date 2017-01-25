@@ -10,7 +10,7 @@ window.onload = function() {
         }
         i++;
     }
-    
+
 };
 
 function toBottom(){
