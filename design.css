@@ -1,0 +1,37 @@
+div {
+   text-align: center;
+   margin: 0px;
+   color: #000000;
+}
+body {
+    height: 95.4vh;
+    /*background: linear-gradient(to bottom, #00eebb, #05ff22);*/
+}
+#canvasCon{
+	text-align: center;
+}
+
+h1 {
+	color: #0ff05b;
+}
+h2 {
+		color: #0ff05b;
+}
+
+canvas{
+	margin:20px;
+	text-align: center;
+	display: inline;
+	width: 600px;
+	height: 400px;
+	background-color: black;
+}
+html { 
+        background: url('back.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 200%;
+        width: 100%;
+}
