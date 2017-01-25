@@ -32,10 +32,11 @@ html {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 200%;
+        height: 220%;
         width: 100%;
 }
 
 button {
-  align-self: center;
+width: 10%;
+height: 2%; 
 }
