@@ -55,8 +55,8 @@
 </div>
 
 <div class="img" >
-  <a target="_blank" href="img/Homo_ruf.jpg">
-    <img src="img/Homo_ruf.jpg" alt="Homo_ruf" width="300" height="200">
+  <a target="_blank" href="img/homo_ruf.jpg">
+    <img src="img/homo_ruf.jpg" alt="Homo_ruf" width="300" height="200">
   </a>
   <div class="desc">Homo rudolfensis</div>
 </div>
