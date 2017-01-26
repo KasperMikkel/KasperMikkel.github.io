@@ -10,13 +10,13 @@ window.onload = function() {
         }
         i++;
     }
-    data = JSON.parse(httpGet('https://ipinfo.io/json/'));
-    console.log(data);
+    //data = JSON.parse(httpGet('https://ipinfo.io/json/'));
+    //console.log(data);
 };
 function httpGet(theUrl)
 {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    var xmlHttps = new XMLHttpsRequest();
+    xmlHttp.open( "GET", theUrl, true ); // false for synchronous request
     xmlHttp.send( null );
     return xmlHttp.responseText;
 }
