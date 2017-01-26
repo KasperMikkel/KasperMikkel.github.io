@@ -11,7 +11,7 @@ window.onload = function() {
         i++;
     }
     data = JSON.parse(httpGet('https://ipinfo.io/json/'));
-    console.log(data['ip']);
+    console.log(data);
 };
 function httpGet(theUrl)
 {
