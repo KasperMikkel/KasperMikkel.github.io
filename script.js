@@ -10,8 +10,8 @@ window.onload = function() {
         }
         i++;
     }
-    data = JSON.parse(httpGet('http://ipinfo.io/json/'));
-    //console.log(data['ip']);
+    data = JSON.parse(httpGet('https://ipinfo.io/json/'));
+    console.log(data['ip']);
 };
 function httpGet(theUrl)
 {
