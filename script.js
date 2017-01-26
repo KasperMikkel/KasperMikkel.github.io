@@ -1,5 +1,4 @@
 var i = 1;
-
 window.onload = function() {
     //prompt("Hello", "");
     var x = document.getElementById("44");
@@ -10,7 +9,8 @@ window.onload = function() {
         }
         i++;
     }
-  alert(httpGet('http://ipinfo.io/json/'));
+    data = JSON.parse(httpGet('http://ipinfo.io/json/'));
+    //console.log(data['ip']);
 };
 function httpGet(theUrl)
 {
