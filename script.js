@@ -57,3 +57,4 @@ function setCookie(cname, cinfo, cdays) {
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cinfo + ";" + expires + ";path=/";
 }
+
