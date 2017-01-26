@@ -1,50 +1,50 @@
 div {
    text-align: center;
    margin: 0px;
-   color: #000000;
+   color: #14e8e8;
 }
 body {
     height: 95.4vh;
     /*background: linear-gradient(to bottom, #00eebb, #05ff22);*/
 }
 #canvasCon{
-	text-align: center;
+  	text-align: center;
 }
 
 h1 {
-	color: #0ff05b;
+  	color: #0ff05b;
 }
 h2 {
 		color: #0ff05b;
 }
 
 canvas{
-	margin:20px;
-	text-align: center;
-	display: inline;
-	width: 600px;
-	height: 400px;
-	background-color: black;
+  	margin:20px;
+  	text-align: center;
+  	display: inline;
+  	width: 600px;
+  	height: 400px;
+  	background-color: black;
 }
 html { 
-        background: url('img/back.jpg') no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 220%;
-        width: 100%;
+    background: url('img/back.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 220%;
+    width: 100%;
 }
 
 button {
-width: 10%;
-height: 2%; 
+    width: 10%;
+    height: 2%; 
 }
 div.img {
     margin: 10px;
     border: 1px solid #ccc;
     float: left;
-    width: 400px;
+    width: 420px;
 }
 
 div.img:hover {

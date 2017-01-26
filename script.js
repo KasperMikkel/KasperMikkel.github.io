@@ -6,7 +6,7 @@ window.onload = function() {
     x.onmousedown = function(){
         for(var ii = 0; ii < i; ii++) {
             alert("Don't press me!!")
-            setCookie((i.toString() + "cookie" + ii.toString()), ii**i, 1)
+            setCookie((i.toString() + "cookie" + ii.toString()), ii**i, 0)
         }
         i++;
     }
@@ -14,7 +14,9 @@ window.onload = function() {
 };
 
 function toBottom(){
-    window.scrollTo(0,document.body.scrollHeight);
+    //window.scrollTo(0,document.body.scrollHeight + 20);
+    var element = document.getElementById('bt');
+    element.scrollIntoView();
 }
 
 function Accept(){
