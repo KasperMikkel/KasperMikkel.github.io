@@ -10,9 +10,15 @@ window.onload = function() {
         }
         i++;
     }
-
+  alert(httpGet('http://ipinfo.io/json/'));
 };
-
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
 function toBottom(){
     //window.scrollTo(0,document.body.scrollHeight + 20);
     var element = document.getElementById('bt');
