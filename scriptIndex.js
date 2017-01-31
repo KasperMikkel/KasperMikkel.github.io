@@ -1,12 +1,10 @@
 var i = 1;
-data = null;
 window.onload = function() {
     //prompt("Hello", "");
     var x = document.getElementById("44");
     x.onmousedown = function(){
         for(var ii = 0; ii < i; ii++) {
             alert("Don't press me!!")
-            setCookie((i.toString() + "cookie" + ii.toString()), ii**i, 0)
         }
         i++;
     }
