@@ -11,6 +11,24 @@ Mål:
 	Understøtte pointer;
 
 
+Fremlæggelses mål:
+	produkt
+		middel
+			1. Produktet er "relevant forhold til emnet og problemstillilgen" under = nogen form for relevant over= meget relevant. Det samme til alle.
+			2. Den håndværksmæssige udførelse præget af nogen omhu
+			3. nogen grad af beherskelse af udtryksformens virkemidler.
+		relevant
+			1. fag
+			2. emne
+	fremlæggelse
+		middel
+			1. Fremlæggelsen er nogenlunde klar og tydelig
+			2. kontakt til tilhørerne
+			3. Eleverne fordeler opgaverne nogenlunde hensigtmæssigt og ligeligt imellem sig
+			4. Rimelig grad af forberedelse
+			5. Opgaven fremtræder rimeligt helstøbt
+	
+	
 Hvad er {x}?
 Produkt/{Historien};
 mod argumenter;
