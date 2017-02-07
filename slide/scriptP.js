@@ -1,8 +1,8 @@
 window.onload = function(){
+  document.getElementById("next").disabled = true;
 	var elems = document.getElementById('clock');
 	var Timer = new Stopwatch(elems);
 	Timer.stop();
-  document.getElementById("next").disabled = true;
 }
 
 
@@ -44,7 +44,7 @@ function next(){
 		document.getElementById('img1').src = '../img/Darw7.jpg';
 		document.getElementById('img2').src = '../img/ID7.jpg';
 		document.getElementById('img3').src = '../img/SkabD7.jpg';
-    document.getElementById("myBtn").disabled = false;
+    document.getElementById("next").disabled = false;
 		break;
 	}
 	i++;
