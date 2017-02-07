@@ -43,8 +43,8 @@ button {
 }
 div.img {
     margin: 1.5%;
-    border: 0px solid #ccc;
-    float: center;
+    border: 1px solid black;
+    float: left;
     width: 30%;
     align-content: center;
     text-align: center;
