@@ -50,17 +50,8 @@ div.img {
     text-align: center;
 }
 
-div.img:hover {
-    border: 1px solid #777;
-}
-
 div.img img {
     width: 100%;
     height: auto;
     align-self: center;
-}
-
-div.desc {
-    padding: 0%;
-    text-align: center;
 }
