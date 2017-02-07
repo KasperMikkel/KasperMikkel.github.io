@@ -11,6 +11,9 @@ window.onload = function() {
     //data = JSON.parse(httpGet('https://ipinfo.io/json/'));
     //console.log(data);
 };
+function toF(){
+    window.location.href = 'slide/forside.html';
+}
 function httpGet(theUrl)
 {
     var xmlHttps = new XMLHttpsRequest();
