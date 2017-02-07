@@ -1,5 +1,7 @@
 window.onload = function(){
-	initializeClock('clockdiv', deadline);
+	var elems = document.getElementById('clock');
+	var Timer = new Stopwatch(elems);
+	Timer.start();
 }
 
 
@@ -8,52 +10,37 @@ var i = 0;
 function next(){
 	switch(i){
 	case 0:
-		document.getElementById('img1').src = 'img/dino.jpg';
+		document.getElementById('img1').src = 'img/Darw1.jpg';
 		document.getElementById('img2').src = 'img/dino2.jpg';
 		document.getElementById('img3').src = 'img/cyano.jpg';
 		break;
 	case 1:
-		document.getElementById('img1').src = 'img/homo_ruf.jpg';
+		document.getElementById('img1').src = 'img/Darw2.jpg';
 		document.getElementById('img2').src = 'img/fossil1.jpg';
 		document.getElementById('img3').src = 'img/primate.jpg';
 		break;
 	case 2:
-		document.getElementById('img1').src = 'img/homo_ruf.jpg';
+		document.getElementById('img1').src = 'img/Darw3.jpg';
 		document.getElementById('img2').src = 'img/fossil1.jpg';
 		document.getElementById('img3').src = 'img/primate.jpg';
 		break;
 	case 3:
-		document.getElementById('img1').src = 'img/homo_ruf.jpg';
+		document.getElementById('img1').src = 'img/Darw4.jpg';
 		document.getElementById('img2').src = 'img/fossil1.jpg';
 		document.getElementById('img3').src = 'img/primate.jpg';
 		break;
 	case 4:
-		document.getElementById('img1').src = 'img/homo_ruf.jpg';
+		document.getElementById('img1').src = 'img/Darw5.jpg';
 		document.getElementById('img2').src = 'img/fossil1.jpg';
 		document.getElementById('img3').src = 'img/primate.jpg';
 		break;
 	case 5:
-		document.getElementById('img1').src = 'img/homo_ruf.jpg';
+		document.getElementById('img1').src = 'img/Darw6.jpg';
 		document.getElementById('img2').src = 'img/fossil1.jpg';
 		document.getElementById('img3').src = 'img/primate.jpg';
 		break;
 	case 6:
-		document.getElementById('img1').src = 'img/homo_ruf.jpg';
-		document.getElementById('img2').src = 'img/fossil1.jpg';
-		document.getElementById('img3').src = 'img/primate.jpg';
-		break;
-	case 7:
-		document.getElementById('img1').src = 'img/homo_ruf.jpg';
-		document.getElementById('img2').src = 'img/fossil1.jpg';
-		document.getElementById('img3').src = 'img/primate.jpg';
-		break;
-	case 8:
-		document.getElementById('img1').src = 'img/homo_ruf.jpg';
-		document.getElementById('img2').src = 'img/fossil1.jpg';
-		document.getElementById('img3').src = 'img/primate.jpg';
-		break;
-	case 9:
-		document.getElementById('img1').src = 'img/dino2.jpg';
+		document.getElementById('img1').src = 'img/Darw7.jpg';
 		document.getElementById('img2').src = 'img/dino.jpg';
 		document.getElementById('img3').src = 'img/primate2.jpg';
 		i = -1;
@@ -62,33 +49,85 @@ function next(){
 	i++;
 }
 
-var deadline = 'February 8 2017 10:30:00';
+var Stopwatch = function(elem, options) {
 
-function initializeClock(id, endtime){
-  var clock = document.getElementById(id);
-  var timeinterval = setInterval(function(){
-    var t = getTimeRemaining(endtime);
-    clock.innerHTML = 'days: ' + t.days + '<br>' +
-                      'hours: '+ t.hours + '<br>' +
-                      'minutes: ' + t.minutes + '<br>' +
-                      'seconds: ' + t.seconds;
-    if(t.total<=0){
-      clearInterval(timeinterval);
+  var timer       = createTimer(),
+      startButton = createButton("start", start),
+      stopButton  = createButton("stop", stop),
+      resetButton = createButton("reset", reset),
+      offset,
+      clock,
+      interval;
+  // default options
+  options = options || {};
+  options.delay = options.delay || 1;
+
+  // append elements     
+  elem.appendChild(timer);
+  elem.appendChild(document.createElement("br"));
+  elem.appendChild(startButton);
+  elem.appendChild(document.createElement("br"));
+  elem.appendChild(stopButton);
+  elem.appendChild(document.createElement("br"));
+  elem.appendChild(resetButton);
+
+  // initialize
+  reset();
+
+  // private functions
+  function createTimer() {
+    return document.createElement("span");
+  }
+
+  function createButton(action, handler) {
+    var a = document.createElement("a");
+    a.href = "#" + action;
+    a.innerHTML = action;
+    a.addEventListener("click", function(event) {
+      handler();
+      event.preventDefault();
+    });
+    return a;
+  }
+
+  function start() {
+    if (!interval) {
+      offset   = Date.now();
+      interval = setInterval(update, options.delay);
     }
-  },1000);
-}
+  }
 
-function getTimeRemaining(endtime){
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor( (t/1000) % 60 );
-  var minutes = Math.floor( (t/1000/60) % 60 );
-  var hours = Math.floor( (t/(1000*60*60)) % 24 );
-  var days = Math.floor( t/(1000*60*60*24) );
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
+  function stop() {
+    if (interval) {
+      clearInterval(interval);
+      interval = null;
+    }
+  }
+
+  function reset() {
+    clock = 0;
+    render();
+  }
+
+  function update() {
+    clock += delta();
+    render();
+  }
+
+  function render() {
+    timer.innerHTML = clock/1000; 
+  }
+
+  function delta() {
+    var now = Date.now(),
+        d   = now - offset;
+
+    offset = now;
+    return d;
+  }
+
+  // public API
+  this.start  = start;
+  this.stop   = stop;
+  this.reset  = reset;
+};
