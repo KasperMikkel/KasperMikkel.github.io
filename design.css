@@ -7,7 +7,7 @@ body {
     height: 95.4vh;
     /*background: linear-gradient(to bottom, #00eebb, #05ff22);*/
 }
-.space { margin-top: 600px; } /* Classen space, med en margin over der hvor den bliver kaldt på 600px */
+.space { margin-top: 600px; } 
 #canvasCon{
   	text-align: center;
 }
