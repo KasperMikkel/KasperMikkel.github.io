@@ -1,0 +1,12 @@
+Mål:
+	Tid(7->10);
+	Tal tydeligt;
+	Minimal oplæsning;
+	Brug billeder; // Kun relevante
+	Kig op
+	Velforberedt;
+	Opdeling i gruppen;
+	Produkt;
+	Brug produkt;
+	Understøtte pointer;
+
