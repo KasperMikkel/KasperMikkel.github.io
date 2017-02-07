@@ -1,16 +1,15 @@
 var name = "";
-
+var i = 2;
 function init(n){
 	name = n;
-	console.log("gnfgj");
 }
-function start(){
-	alert("HHH");
-	console.log("gnfgj");
+window.onload = function(){
 
-	for (;;) {
-		setTimeout(function () {
-    	        alert("HHH");
-        	}, 5000);
-}
+   window.setInterval(function () {
+   	document.getElementById('Slide').src = "../img/" + name + i + ".jpg";
+   	i++;
+   	if (i > 3)
+   		i = 1;
+    }, 1000);
+
 }
