@@ -10,6 +10,6 @@ window.onload = function(){
    	i++;
    	if (i > 3)
    		i = 1;
-    }, 3000);
+    }, 12500);
 
 }

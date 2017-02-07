@@ -45,6 +45,7 @@ function next(){
 		document.getElementById('img2').src = '../img/ID7.jpg';
 		document.getElementById('img3').src = '../img/SkabD7.jpg';
     document.getElementById("next").disabled = false;
+    document.getElementById("nxtB").disabled = true;
 		break;
 	}
 	i++;
