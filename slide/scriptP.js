@@ -2,6 +2,7 @@ window.onload = function(){
 	var elems = document.getElementById('clock');
 	var Timer = new Stopwatch(elems);
 	Timer.stop();
+  document.getElementById("next").disabled = true;
 }
 
 
@@ -43,7 +44,7 @@ function next(){
 		document.getElementById('img1').src = '../img/Darw7.jpg';
 		document.getElementById('img2').src = '../img/ID7.jpg';
 		document.getElementById('img3').src = '../img/SkabD7.jpg';
-		i = -1;
+    document.getElementById("myBtn").disabled = false;
 		break;
 	}
 	i++;
