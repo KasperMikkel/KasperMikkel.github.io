@@ -1,7 +1,7 @@
 div {
    text-align: center;
    margin: 0px;
-   color: #14e8e8;
+   color: blue;
 }
 body {
     height: 95.4vh;
@@ -13,10 +13,10 @@ body {
 }
 
 h1 {
-  	color: #0ff05b;
+  	color: blue;
 }
 h2 {
-		color: #0ff05b;
+		color: blue;
 }
 
 canvas{
