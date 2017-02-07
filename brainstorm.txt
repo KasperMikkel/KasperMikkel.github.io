@@ -10,3 +10,7 @@ Mål:
 	Brug produkt;
 	Understøtte pointer;
 
+
+Hvad er {x}?
+Produkt/{Historien};
+mod argumenter;
