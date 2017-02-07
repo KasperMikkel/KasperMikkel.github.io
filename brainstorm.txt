@@ -3,7 +3,7 @@ Mål:
 	Tal tydeligt;
 	Minimal oplæsning;
 	Brug billeder; // Kun relevante
-	Kig op
+	Kig op;
 	Velforberedt;
 	Opdeling i gruppen;
 	Produkt;
