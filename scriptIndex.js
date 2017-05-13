@@ -4,7 +4,7 @@ window.onload = function() {
     var x = document.getElementById("44");
     x.onmousedown = function(){
         for(var ii = 0; ii < i; ii++) {
-            alert(var result = ['January', 'February', 'March'][Math.floor(Math.random() * 3)])
+            alert("LOL")
         }
         i++;
     }
