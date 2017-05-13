@@ -14,6 +14,13 @@ window.onload = function() {
 function toF(){
     window.location.href = 'slide/forside.html';
 }
+fucntion fruit(){
+	var selectFruit = ["Apple", "Orange", "Banana", "Cherry"];
+	var pickAFruit = function () {
+	var todaysFruit = selectFruit[Math.floor(Math.random() * 4)];
+	return todaysFruit;
+	alert(todaysFruit);
+}
 function httpGet(theUrl)
 {
     var xmlHttps = new XMLHttpsRequest();
